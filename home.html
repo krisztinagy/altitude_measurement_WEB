@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no" />
+		
+		<title>UAV tracking</title>
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<script src="https://www.google.com/jsapi"></script>
+		
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe9g5zF2CC35Sla4gEBUsyiBdlHk6ntQg"></script>
+		
+		<script type="text/javascript" src="tracking.js"></script>
+		
+	</head>
+
+	<body>
+	
+		<div class="header">
+			<h1>UAV data tracking</h1>
+			<div class="clear"></div>
+		</div>
+
+		<input type= "file" id="myFile" size=50 onChange="initialize()">
+
+		<div id="map-canvas"></div>
+		<br></br>
+		
+		<hr>
+		<div id="measuredAltitude_chart"></div>
+		<hr>
+		<div id="googleMapsElevation_chart"></div>
+		<hr>
+		<div id="altitudeFromGround_chart"></div>
+		<hr>
+		<div id="satellitesInView_chart"></div>
+		<hr>
+		
+	</body>
+  
+	<footer>
+	  
+		<p>Author: Nagy Krisztina</p>
+		<p><time pubdate datetime="2014-09-16"></time></p>
+		
+	</footer>
+	
+</html>
